@@ -1,3 +1,7 @@
 [submodule "my-submodule1"]
 	path = my-submodule1
 	url = https://github.com/sachinjadhav7/my-submodule1.git
+[submodule "my-submodule2"]
+	path = my-submodule2
+	url = https://github.com/sachinjadhav7/my-submodule2.git
+	branch = bug-fix
