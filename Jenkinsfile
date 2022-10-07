@@ -1,12 +1,14 @@
 pipeline {
     agent any 
     stages {
-        stage('git-scm pull') { 
-            steps {
-					cleanWs()
-					git 'https://github.com/sachinjadhav7/devops.git'
-            }
-        }
+     stage ('download httpd') {
+					steps {
+					
+							sh "sudo apt install httpd -y"
+							
+							}
+							}
+							
         stage('Test') { 
             steps {
                 echo "pwd"
