@@ -17,5 +17,11 @@ pipeline {
                 sh "git status" 
             }
         }
+	    stage ('echo branch') {
+		    steps {
+			    
+			    echo "this is master"
+		    }
+	    }
     }
 }
