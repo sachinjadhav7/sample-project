@@ -1,10 +1,10 @@
 pipeline {
     agent any 
     stages {
-     stage ('download httpd') {
+     stage ('print') {
 					steps {
 					
-							sh "sudo apt install httpd -y"
+							echo "hello-world"
 							
 							}
 							}
