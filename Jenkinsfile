@@ -4,17 +4,17 @@ pipeline {
      stage ('print') {
 					steps {
 					
-							echo "hello-world"
+							echo "hello-devops"
 							
 							}
 							}
 							
-        stage('Test') { 
+        stage('curret') { 
             steps {
                 echo "pwd"
             }
         }
-        stage('Deploy') { 
+        stage('status') { 
             steps {
                 sh "git status" 
             }
