@@ -1,27 +1,23 @@
+
+
+
 pipeline {
     agent any 
     stages {
-        stage('git-scm pull') { 
+        stage('dir') { 
             steps {
-					cleanWs()
-					git 'https://github.com/sachinjadhav7/devops.git'
+                sh "mkdir fusion" 
             }
         }
-        stage('Test') { 
+        stage('prin') { 
             steps {
-                echo "pwd"
+					echo "hello devops"
             }
         }
-        stage('Deploy') { 
+        stage('git') { 
             steps {
-                sh "git status" 
+                sh "sudo apt install git -y"
             }
         }
-	    stage ('echo branch') {
-		    steps {
-			    
-			    echo "this is master"
-		    }
-	    }
     }
 }
